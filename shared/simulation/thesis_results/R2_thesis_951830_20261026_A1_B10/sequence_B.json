@@ -1,0 +1,39 @@
+{
+  "folds": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9",
+    "B10"
+  ],
+  "gzip_name": "seq_R2_thesis_seed951830_sequence_B1_B10.json.gz",
+  "gzip_path": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\outputs\\seq_R2_thesis_seed951830_sequence_B1_B10.json.gz",
+  "portfolio_mode": "reset",
+  "metrics": {
+    "total_return": -15.31,
+    "cagr": -19.5327,
+    "sharpe_ratio": -0.5809,
+    "sortino_ratio": -0.8311,
+    "max_drawdown": -36.6811,
+    "calmar_ratio": -0.5325,
+    "growth_since_start": -15.31,
+    "max_portfolio_growth": 5.94,
+    "max_portfolio_drop": -32.92,
+    "transaction_count": 0,
+    "final_portfolio_value": 846.9,
+    "avg_transactions_per_day": 0.0,
+    "profit_factor": null,
+    "win_rate": null,
+    "avg_win": null,
+    "avg_loss": null,
+    "turnover": 0.0,
+    "time_in_cash": 0.0,
+    "closed_trades_count": 0,
+    "score": 2.66
+  }
+}

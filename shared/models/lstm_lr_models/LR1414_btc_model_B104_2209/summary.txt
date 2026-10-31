@@ -1,0 +1,47 @@
+======================================================================
+LSTM LOG-RETURN MODEL SUMMARY
+======================================================================
+
+Model ID:   LR1414
+Data ID:    B104
+Symbol:     BTC
+Horizon:    t+12
+Lookback:   48
+Features:   16
+Target scl: DISABLED
+Loss:       custom
+Best epoch: 22
+Timestamp:  20260922_142215
+
+ARCHITECTURE:
+  Hidden:      32
+  Layers:      1
+  Dropout:     0.051
+  Bidir:       True
+  Attention:   False
+  Params:      15,044
+
+TRAIN METRICS (log-return):
+  MAE:      0.001615
+  RMSE:     0.002315
+  R²:       -1.2925
+  Dir Acc:  52.55%
+
+  THRESHOLDED (|y| ≥ 0.001000, n=78633):
+  t_MAE:     0.002300
+  t_RMSE:    0.003018
+  t_R²:      -0.5987
+  t_Dir Acc: 53.88%
+
+VALIDATION METRICS (log-return):
+  MAE:      0.002193
+  RMSE:     0.003610
+  R²:       -1.2235
+  Dir Acc:  50.94%
+
+  THRESHOLDED (|y| ≥ 0.001000, n=25549):
+  t_MAE:     0.003025
+  t_RMSE:    0.004577
+  t_R²:      -0.8141
+  t_Dir Acc: 50.56%
+

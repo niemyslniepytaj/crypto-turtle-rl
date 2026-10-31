@@ -1,0 +1,10 @@
+{
+  "arm": "M2",
+  "continue_on": "B5",
+  "continue_from": "agent_ppo_seed396379_final_2026-10-26_12-24-01.zip",
+  "agent_file": "agent_ppo_seed396379_final_2026-10-26_12-33-37.zip",
+  "sim_mode": "rl",
+  "result": "success",
+  "seed": 396379,
+  "regime_labels": false
+}

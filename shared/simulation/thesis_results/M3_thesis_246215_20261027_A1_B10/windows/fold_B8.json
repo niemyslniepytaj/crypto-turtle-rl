@@ -1,0 +1,155 @@
+{
+  "schema_version": 2,
+  "arm": "M3",
+  "plan_id": "M3",
+  "arm_label": "RL + UL (v6+rlul)",
+  "fold_id": "B8",
+  "train_window": "B5+B6+B7",
+  "eval_window": "B8",
+  "experiment_version": "v6",
+  "sim_mode": "rlul",
+  "params": {
+    "balance_start": 1000.0,
+    "add_fee": true,
+    "slippage": 0.0,
+    "threshold_buy": 0.5,
+    "threshold_sell": 0.5,
+    "stop_loss": 0.03,
+    "stop_loss_cooldown": 120,
+    "mincost": 12.0,
+    "wallet_percentage_limit": 0.85,
+    "max_wallet_percentage_crypto": 0.5,
+    "mp_ema_alpha_min": 0.02,
+    "mp_ema_alpha_span": 0.08,
+    "mp_alloc_bias": 0.5221074391557103,
+    "mp_alloc_scale": 0.03783626096144381,
+    "mp_confidence": 0.2118563626106807,
+    "mp_urgency": 0.029026799395041297,
+    "mp_signal_deadzone": 0.24896422017200054,
+    "mp_rebalance_deadzone": 0.24917522735339426,
+    "clamp_wallet_cap_to_1n": false,
+    "v5rl_knob_hold_bars": 1,
+    "v5rl_trade_lock_bars": 15,
+    "rlagent_deterministic": true
+  },
+  "metrics": {
+    "total_return": -6.19,
+    "cagr": -56.6421,
+    "sharpe_ratio": -2.9615,
+    "sortino_ratio": -4.2006,
+    "max_drawdown": -13.4217,
+    "calmar_ratio": -4.2202,
+    "growth_since_start": -6.19,
+    "max_portfolio_growth": 3.34,
+    "max_portfolio_drop": -10.53,
+    "transaction_count": 1148,
+    "final_portfolio_value": 938.1,
+    "avg_transactions_per_day": 41.1326,
+    "profit_factor": 0.7726,
+    "win_rate": 0.6069,
+    "avg_win": 0.4249,
+    "avg_loss": -0.8491,
+    "turnover": 53.2136,
+    "time_in_cash": 0.0172,
+    "closed_trades_count": 491,
+    "score": 7.32
+  },
+  "hodl_return": 3.560021998240882,
+  "excess_return": -9.750021998240882,
+  "n_ticks": 40190,
+  "artifacts": {
+    "agent_used": "agent_ppo_rlul_seed246215_final_2026-10-27_07-10-49.zip",
+    "obs_rms_file": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\agents\\ppo\\agent_ppo_rlul_seed246215_final_2026-10-27_07-10-49_obs_rms.npz",
+    "ul_model_path": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\M3_thesis_246215_20261027_A1_B10\\arms\\M3\\fold_B8_ul.joblib",
+    "ul_fit_time_s": 0.11,
+    "ul_cores": 1.0,
+    "ul_k": 2,
+    "ul_fit_windows": "B5+B6+B7",
+    "ul_profile": {
+      "k": 2,
+      "groups": {
+        "0": {
+          "n": 94796,
+          "mean": {
+            "ret_h": 0.03368935397526287,
+            "vol_ratio": -0.376599004773255,
+            "vol_short": -0.3639391628952214
+          }
+        },
+        "1": {
+          "n": 24724,
+          "mean": {
+            "ret_h": -0.12917068433259307,
+            "vol_ratio": 1.4439443155025578,
+            "vol_short": 1.3954043393390874
+          }
+        }
+      },
+      "feature_names": [
+        "ret_h",
+        "vol_ratio",
+        "vol_short"
+      ],
+      "scaler_mean": [
+        -0.0001262002189259226,
+        0.9273298681824926,
+        0.0005623878914792767
+      ],
+      "scaler_scale": [
+        0.004874067312710349,
+        0.4217680771829051,
+        0.00033483539063871806
+      ]
+    },
+    "ul_refit": true,
+    "optuna_time_s": 0.0,
+    "portfolio_state": {
+      "balance": 331.99980564003886,
+      "holdings": {
+        "ETH": 0.08142651443225729,
+        "BTC": 0.007238362491754874
+      },
+      "avg_buy_price": {
+        "ETH": 1785.1032179489625,
+        "BTC": 63297.0888974074
+      },
+      "last_buy_price": {
+        "ETH": 0.0,
+        "BTC": 0.0
+      }
+    },
+    "gzip_path": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\outputs\\seq_M3_thesis_seed246215_B8.json.gz",
+    "gzip_name": "seq_M3_thesis_seed246215_B8.json.gz",
+    "sim_path": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\M3_thesis_246215_20261027_A1_B10\\windows\\B8",
+    "agent_after_continue": "agent_ppo_rlul_seed246215_final_2026-10-27_07-20-16.zip",
+    "train_time_s": 404.22,
+    "train_cores": 11.0,
+    "obs_rms_after_continue": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\agents\\ppo\\agent_ppo_rlul_seed246215_final_2026-10-27_07-20-16_obs_rms.npz",
+    "env_steps": 400000,
+    "optuna_cores": 1.0,
+    "optuna_core_hours": 0.0,
+    "train_core_hours": 1.235117,
+    "ul_core_hours": 3.1e-05,
+    "adapt_wall_time_s": 404.33,
+    "adapt_core_hours": 1.235148,
+    "adaptation_cost": 1,
+    "wall_time_s": 566.76,
+    "wall_time_s_total": 566.76,
+    "continue_timesteps": 400000,
+    "num_envs": 11,
+    "hardware": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+      "cpu_count": 16,
+      "cuda_available": false,
+      "device": "cpu"
+    },
+    "wall_time_parts_sum": 404.33
+  },
+  "status": "ok",
+  "extras": {
+    "continue_on": "B8",
+    "continue_timesteps": 400000
+  },
+  "timestamp": "2026-10-27T07:13:33.070219"
+}

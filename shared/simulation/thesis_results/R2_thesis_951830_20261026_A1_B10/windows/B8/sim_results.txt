@@ -1,0 +1,22 @@
+{
+  "total_return": -3.09,
+  "cagr": -33.6676,
+  "sharpe_ratio": -1.3369,
+  "sortino_ratio": -1.911,
+  "max_drawdown": -11.5306,
+  "calmar_ratio": -2.9198,
+  "growth_since_start": -3.09,
+  "max_portfolio_growth": 3.29,
+  "max_portfolio_drop": -8.62,
+  "transaction_count": 248,
+  "final_portfolio_value": 969.1,
+  "avg_transactions_per_day": 8.8858,
+  "profit_factor": 0.4252,
+  "win_rate": 0.5465,
+  "avg_win": 0.9047,
+  "avg_loss": -2.5644,
+  "turnover": 13.1809,
+  "time_in_cash": 0.0112,
+  "closed_trades_count": 86,
+  "score": 7.69
+}

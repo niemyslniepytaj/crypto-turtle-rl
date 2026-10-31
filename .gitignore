@@ -1,0 +1,174 @@
+# ============================
+# Python
+# ============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# ============================
+# Secrets & local env
+# ============================
+*.env
+.env.*
+!*.env.example
+docker-compose.override.yml
+
+# ============================
+# Artefakty / dane / modele
+# ============================
+shared/realtime_simulation/
+shared/quality_reports/
+shared/E104*/
+shared/plgrid/
+
+# --- files: ignore all, whitelist thesis configs + CSV ---
+shared/files/*
+!shared/files/windows.json
+!shared/files/thesis_sequence_config.json
+!shared/files/thesis_sequence_config.example.json
+!shared/files/regime_lock.json
+!shared/files/regime_model_train.joblib
+!shared/files/regime_model_train_profile.json
+!shared/files/processed_simulation_data/
+!shared/files/processed_simulation_data/ETHUSDT_1m_20250511_20260831.csv
+!shared/files/processed_simulation_data/BTCUSDT_1m_20250511_20260831.csv
+
+# --- models: ignore all, whitelist thesis packs ---
+shared/models/*
+!shared/models/lstm_lr_models/
+shared/models/lstm_lr_models/*
+!shared/models/lstm_lr_models/LR1449_eth_model_E114_2709/
+!shared/models/lstm_lr_models/LR1449_eth_model_E114_2709/**
+!shared/models/lstm_lr_models/LR1414_btc_model_B104_2209/
+!shared/models/lstm_lr_models/LR1414_btc_model_B104_2209/**
+# mp_signal: najpierw lstm_model_package_latest (fallbacki package2 / package — poza gitem)
+!shared/models/lstm_model_package_latest/
+!shared/models/lstm_model_package_latest/**
+!shared/models/xgb_model_package/
+!shared/models/xgb_model_package/**
+
+# --- agents: ignore all, whitelist teza (PPO start + continue-learn, Optuna R1/WF) ---
+# Continue-learn (M2/M3) zapisuje agent_ppo_*_final_* tu; w thesis_results tylko meta fold_*_continue.json
+shared/agents/*
+!shared/agents/optuna_studies/
+shared/agents/optuna_studies/*
+!shared/agents/optuna_studies/r1_lock_final_seed396379_sl003.json
+!shared/agents/optuna_studies/r1_lock_final_seed951830_sl003.json
+!shared/agents/optuna_studies/r1_lock_final_seed246215_sl003.json
+!shared/agents/optuna_studies/simulation_tuning_*_final_sl003*
+!shared/agents/optuna_studies/wf_*
+!shared/agents/ppo/
+shared/agents/ppo/*
+# start sekwencji (bez *_12M_failed / *_KEEP_* / *_obs_rms_keep*)
+!shared/agents/ppo/PPO_best_396379.zip
+!shared/agents/ppo/PPO_best_396379.json
+!shared/agents/ppo/PPO_best_396379_obs_rms.npz
+!shared/agents/ppo/PPO_best_951830.zip
+!shared/agents/ppo/PPO_best_951830.json
+!shared/agents/ppo/PPO_best_951830_obs_rms.npz
+!shared/agents/ppo/PPO_best_246215.zip
+!shared/agents/ppo/PPO_best_246215.json
+!shared/agents/ppo/PPO_best_246215_obs_rms.npz
+!shared/agents/ppo/PPO_best_UL_396379.zip
+!shared/agents/ppo/PPO_best_UL_396379.json
+!shared/agents/ppo/PPO_best_UL_396379_obs_rms.npz
+!shared/agents/ppo/PPO_best_UL_951830.zip
+!shared/agents/ppo/PPO_best_UL_951830.json
+!shared/agents/ppo/PPO_best_UL_951830_obs_rms.npz
+!shared/agents/ppo/PPO_best_UL_246215.zip
+!shared/agents/ppo/PPO_best_UL_246215.json
+!shared/agents/ppo/PPO_best_UL_246215_obs_rms.npz
+# checkpointy continue-learn tezy (M2 / M3)
+!shared/agents/ppo/agent_ppo_seed396379_final_*
+!shared/agents/ppo/agent_ppo_seed951830_final_*
+!shared/agents/ppo/agent_ppo_seed246215_final_*
+!shared/agents/ppo/agent_ppo_rlul_seed396379_final_*
+!shared/agents/ppo/agent_ppo_rlul_seed951830_final_*
+!shared/agents/ppo/agent_ppo_rlul_seed246215_final_*
+# backup / warsztat (nadpisuje szerokie *_final_* powyżej)
+shared/agents/ppo/*KEEP*
+shared/agents/ppo/*_keep*
+shared/agents/ppo/*12M_failed*
+shared/agents/ppo/*workdir*
+
+# --- simulation: tylko kampania tezy (runy *_thesis_*) + najnowszy compare/report ---
+# Najnowszy agregat: znacznik 20261028_022007 (_compare mixed + _report reset)
+shared/simulation/*
+!shared/simulation/thesis_results/
+shared/simulation/thesis_results/*
+!shared/simulation/thesis_results/*_thesis_*/
+!shared/simulation/thesis_results/*_thesis_*/**
+!shared/simulation/thesis_results/_compare/
+shared/simulation/thesis_results/_compare/*
+!shared/simulation/thesis_results/_compare/*_20261028_022007/
+!shared/simulation/thesis_results/_compare/*_20261028_022007/**
+!shared/simulation/thesis_results/_report/
+shared/simulation/thesis_results/_report/*
+!shared/simulation/thesis_results/_report/*_20261028_022007/
+!shared/simulation/thesis_results/_report/*_20261028_022007/**
+!shared/simulation/outputs/
+shared/simulation/outputs/*
+!shared/simulation/outputs/*thesis*
+
+# Modele / wyniki w innych ścieżkach
+*/models/ml/*.pkl
+*/models/sklearn*.*
+*/simulation/plots/*
+*/simulation/logs/*
+*/results/experiments/*
+
+# ============================
+# Docs: markdown OK, PDF nie
+# ============================
+docs/**
+!docs/*.md
+!docs/api/
+!docs/api/**
+docs/**/*.pdf
+site/
+
+# ============================
+# Logs
+# ============================
+*.log
+
+# ============================
+# System / IDE
+# ============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.vs/
+
+# ============================
+# Other
+# ============================
+*.bak
+*.tmp
+_tmp*
+_tmp_*/
+node_modules/
+
+# Duże CSV poza tezą (nie trackować)
+z_maina_funkcje/abc.csv
+test_module/services/test/sym.csv

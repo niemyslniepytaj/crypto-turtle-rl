@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "arm": "R1",
+  "plan_id": "R1",
+  "arm_label": "MP static (v6+mp)",
+  "fold_id": "A1",
+  "train_window": null,
+  "eval_window": "A1",
+  "experiment_version": "v6",
+  "sim_mode": "mp",
+  "params": {
+    "balance_start": 1000.0,
+    "add_fee": true,
+    "slippage": 0.0,
+    "threshold_buy": 0.5,
+    "threshold_sell": 0.5,
+    "stop_loss": 0.03,
+    "stop_loss_cooldown": 120,
+    "mincost": 12.0,
+    "wallet_percentage_limit": 0.85,
+    "max_wallet_percentage_crypto": 0.5,
+    "mp_ema_alpha_min": 0.02,
+    "mp_ema_alpha_span": 0.08,
+    "mp_alloc_bias": 0.5152158733108876,
+    "mp_alloc_scale": 0.025614089794848194,
+    "mp_confidence": 0.7812227331734536,
+    "mp_urgency": 0.004304334975118618,
+    "mp_signal_deadzone": 0.08393497797489963,
+    "mp_rebalance_deadzone": 0.2523517705770279,
+    "clamp_wallet_cap_to_1n": false,
+    "v5rl_knob_hold_bars": 1,
+    "v5rl_trade_lock_bars": 15
+  },
+  "metrics": {
+    "total_return": 2.42,
+    "cagr": 36.7144,
+    "sharpe_ratio": 1.2635,
+    "sortino_ratio": 1.7951,
+    "max_drawdown": -9.9777,
+    "calmar_ratio": 3.6797,
+    "growth_since_start": 2.42,
+    "max_portfolio_growth": 7.44,
+    "max_portfolio_drop": -3.28,
+    "transaction_count": 157,
+    "final_portfolio_value": 1024.2,
+    "avg_transactions_per_day": 5.6253,
+    "profit_factor": 0.8495,
+    "win_rate": 0.2941,
+    "avg_win": 16.0388,
+    "avg_loss": -7.8667,
+    "turnover": 9.6002,
+    "time_in_cash": 0.0235,
+    "closed_trades_count": 17,
+    "score": 71.23
+  },
+  "hodl_return": 1.6635358347578288,
+  "excess_return": 0.7564641652421711,
+  "n_ticks": 40190,
+  "artifacts": {
+    "portfolio_state": {
+      "balance": 381.69443406929753,
+      "holdings": {
+        "ETH": 0.06941652594119091,
+        "BTC": 0.0030882871538001097
+      },
+      "avg_buy_price": {
+        "ETH": 3807.767112451943,
+        "BTC": 108271.70888161896
+      },
+      "last_buy_price": {
+        "ETH": 0.0,
+        "BTC": 0.0
+      }
+    },
+    "gzip_path": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\outputs\\seq_R1_thesis_seed951830_A1.json.gz",
+    "gzip_name": "seq_R1_thesis_seed951830_A1.json.gz",
+    "sim_path": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\R1_thesis_951830_20261026_A1_B10\\windows\\A1",
+    "wall_time_s": 6.28,
+    "wall_time_s_total": 6.28,
+    "optuna_time_s": 0.0,
+    "train_time_s": 0.0,
+    "ul_fit_time_s": 0.0,
+    "adaptation_cost": 0,
+    "num_envs": 11,
+    "hardware": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+      "cpu_count": 16,
+      "cuda_available": false,
+      "device": "cpu"
+    },
+    "wall_time_parts_sum": 0.0
+  },
+  "status": "ok",
+  "extras": {},
+  "timestamp": "2026-10-26T09:43:58.817458"
+}

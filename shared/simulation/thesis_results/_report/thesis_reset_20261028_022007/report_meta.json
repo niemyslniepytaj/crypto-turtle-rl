@@ -1,0 +1,32 @@
+{
+  "label": "thesis/reset",
+  "portfolio_mode": "reset",
+  "hypothesis_set": "intermediate",
+  "n_run_dirs": 19,
+  "n_incomplete_warnings": 0,
+  "allow_incomplete": false,
+  "alpha": 0.05,
+  "effect": "kerby_rank_biserial (CSV only)",
+  "best_method": "UL",
+  "best_method_rule": "Pierwsza w obu rankingach (mediana Delta oraz mediana e=Delta/core_h); inaczej kompromis: ranking sumy rang (ni\u017csza suma lepsza).",
+  "paths": {
+    "folds_raw.csv": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\_report\\thesis_reset_20261028_022007\\folds_raw.csv",
+    "agg_arm_fold.csv": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\_report\\thesis_reset_20261028_022007\\agg_arm_fold.csv",
+    "tab_metryki.csv": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\_report\\thesis_reset_20261028_022007\\tab_metryki.csv",
+    "tab_testy.csv": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\_report\\thesis_reset_20261028_022007\\tab_testy.csv",
+    "tab_koszty.csv": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\_report\\thesis_reset_20261028_022007\\tab_koszty.csv",
+    "tab_efektywnosc.csv": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\_report\\thesis_reset_20261028_022007\\tab_efektywnosc.csv",
+    "diffs_di.csv": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\_report\\thesis_reset_20261028_022007\\diffs_di.csv",
+    "deltas_methods.csv": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\_report\\thesis_reset_20261028_022007\\deltas_methods.csv",
+    "autocorr_di.csv": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\_report\\thesis_reset_20261028_022007\\autocorr_di.csv"
+  },
+  "tex_files": [
+    "h1.tex",
+    "h2.tex",
+    "h3.tex",
+    "h4.tex",
+    "tab_trend.tex",
+    "tab_ziarna_sigma.tex",
+    "w5_1_wyniki_zbiorcze.tex"
+  ]
+}

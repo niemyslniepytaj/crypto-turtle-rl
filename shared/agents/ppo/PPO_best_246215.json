@@ -1,0 +1,18 @@
+{
+  "schema": "turtle.artifact.v1",
+  "kind": "agent_simbest",
+  "seed": 246215,
+  "agent_file": "PPO_best_246215.zip",
+  "agent_path": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\agents\\ppo\\PPO_best_246215.zip",
+  "obs_rms_file": "PPO_best_246215_obs_rms.npz",
+  "source_workdir": "agent_ppo_workdir_sim_best.zip",
+  "excess_pct": 1.2464641652421615,
+  "epoch_sum": 231,
+  "global_dump": 20,
+  "eval_window_id": "A1",
+  "train_start_time": "2026-10-25T06:40:38.291465",
+  "config_hash": "e01baef886d506953a89649f2c1e6bfa979bfba3a9317114d9bf59a9af3a6b6e",
+  "git_commit": "a790f5fc47ac9b521b32647327a4022f8059d355",
+  "timestamp": "2026-10-25T07:51:59.588752",
+  "selection": "sim_best"
+}

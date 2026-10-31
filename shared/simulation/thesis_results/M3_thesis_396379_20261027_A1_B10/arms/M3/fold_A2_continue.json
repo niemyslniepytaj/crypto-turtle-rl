@@ -1,0 +1,10 @@
+{
+  "arm": "M3",
+  "continue_on": "A2",
+  "continue_from": "agent_ppo_rlul_seed396379_final_2026-10-27_01-55-17.zip",
+  "agent_file": "agent_ppo_rlul_seed396379_final_2026-10-27_02-05-57.zip",
+  "sim_mode": "rlul",
+  "result": "success",
+  "seed": 396379,
+  "regime_labels": true
+}

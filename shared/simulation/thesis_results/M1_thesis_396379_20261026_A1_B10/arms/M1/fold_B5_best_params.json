@@ -1,0 +1,27 @@
+{
+  "train_window": "B2+B3+B4",
+  "eval_window": "B5",
+  "best_params": {
+    "mp_alloc_bias": 0.03246773459166569,
+    "mp_alloc_scale": 0.40740457578963046,
+    "mp_confidence": 0.2688701977771971,
+    "mp_urgency": 0.15796897333040177,
+    "mp_signal_deadzone": 0.43397596308156794,
+    "mp_rebalance_deadzone": 0.23372533099591156,
+    "balance_start": 1000.0,
+    "clamp_wallet_cap_to_1n": false,
+    "add_fee": true,
+    "slippage": 0.0,
+    "threshold_buy": 0.5,
+    "threshold_sell": 0.5,
+    "stop_loss": 0.03,
+    "stop_loss_cooldown": 120,
+    "mincost": 12.0,
+    "wallet_percentage_limit": 0.85,
+    "max_wallet_percentage_crypto": 0.5,
+    "mp_ema_alpha_min": 0.02,
+    "mp_ema_alpha_span": 0.08
+  },
+  "best_metric": 6.262409318296913,
+  "study_name": "wf_M1_B5_20261026_203032"
+}

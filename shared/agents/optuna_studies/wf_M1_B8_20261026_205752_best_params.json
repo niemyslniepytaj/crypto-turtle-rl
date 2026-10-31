@@ -1,0 +1,123 @@
+{
+  "schema": "turtle.artifact.v1",
+  "kind": "optuna_best_params",
+  "seed": 396379,
+  "study_name": "wf_M1_B8_20261026_205752",
+  "algorithm": "simulation",
+  "experiment_version": "v6",
+  "window": "B5+B6+B7",
+  "best_trial": 53,
+  "best_metric": 4.532755116500889,
+  "best_params": {
+    "mp_alloc_bias": 0.07992635308850633,
+    "mp_alloc_scale": 0.595374908583342,
+    "mp_confidence": 0.0023437217781569,
+    "mp_urgency": 0.17370636177019233,
+    "mp_signal_deadzone": 0.45512432550755855,
+    "mp_rebalance_deadzone": 0.4405592631261169,
+    "balance_start": 1000.0,
+    "clamp_wallet_cap_to_1n": false,
+    "add_fee": true,
+    "slippage": 0.0,
+    "threshold_buy": 0.5,
+    "threshold_sell": 0.5,
+    "stop_loss": 0.03,
+    "stop_loss_cooldown": 120,
+    "mincost": 12.0,
+    "wallet_percentage_limit": 0.85,
+    "max_wallet_percentage_crypto": 0.5,
+    "mp_ema_alpha_min": 0.02,
+    "mp_ema_alpha_span": 0.08
+  },
+  "static_params": {},
+  "best_agent": null,
+  "config": {
+    "balance_start": [
+      "C",
+      1000.0
+    ],
+    "window": "B5+B6+B7",
+    "clamp_wallet_cap_to_1n": [
+      "C",
+      false
+    ],
+    "add_fee": [
+      "C",
+      true
+    ],
+    "slippage": [
+      "C",
+      0.0
+    ],
+    "threshold_buy": [
+      "C",
+      0.5
+    ],
+    "threshold_sell": [
+      "C",
+      0.5
+    ],
+    "stop_loss": [
+      "C",
+      0.03
+    ],
+    "stop_loss_cooldown": [
+      "C",
+      120
+    ],
+    "mincost": [
+      "C",
+      12.0
+    ],
+    "wallet_percentage_limit": [
+      "C",
+      0.85
+    ],
+    "max_wallet_percentage_crypto": [
+      "C",
+      0.5
+    ],
+    "mp_ema_alpha_min": [
+      "C",
+      0.02
+    ],
+    "mp_ema_alpha_span": [
+      "C",
+      0.08
+    ],
+    "mp_alloc_bias": [
+      "F",
+      0.0,
+      1.0
+    ],
+    "mp_alloc_scale": [
+      "F",
+      0.0,
+      1.0
+    ],
+    "mp_confidence": [
+      "F",
+      0.0,
+      1.0
+    ],
+    "mp_urgency": [
+      "F",
+      0.0,
+      1.0
+    ],
+    "mp_signal_deadzone": [
+      "F",
+      0.05,
+      0.5
+    ],
+    "mp_rebalance_deadzone": [
+      "F",
+      0.12,
+      0.5
+    ]
+  },
+  "stage_meta": {
+    "staged": false
+  },
+  "timestamp": "2026-10-26T21:06:55.424195"
+}

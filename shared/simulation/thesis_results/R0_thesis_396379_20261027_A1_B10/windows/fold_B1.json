@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "arm": "R0",
+  "plan_id": "R0",
+  "arm_label": "Buy & Hold",
+  "fold_id": "B1",
+  "train_window": null,
+  "eval_window": "B1",
+  "experiment_version": null,
+  "sim_mode": null,
+  "params": {
+    "hodl_entry_fee": false,
+    "hodl_entry_fee_rate": 0.0,
+    "balance_start": 1000.0
+  },
+  "metrics": {
+    "total_return": 3.0833,
+    "cagr": 48.7572,
+    "sharpe_ratio": 1.0029,
+    "sortino_ratio": 1.4222,
+    "max_drawdown": -15.154,
+    "calmar_ratio": 3.2175,
+    "growth_since_start": 3.0833,
+    "max_portfolio_growth": 14.147,
+    "max_portfolio_drop": -4.494,
+    "transaction_count": 0,
+    "final_portfolio_value": 1030.8327,
+    "avg_transactions_per_day": 0.0,
+    "profit_factor": null,
+    "win_rate": null,
+    "avg_win": null,
+    "avg_loss": null,
+    "turnover": 0.0,
+    "time_in_cash": 0.0,
+    "closed_trades_count": 0,
+    "score": 61.25,
+    "entry_fee_paid": 0.0,
+    "fee_paid": 0.0
+  },
+  "hodl_return": 3.0833,
+  "excess_return": 0.0,
+  "n_ticks": 40190,
+  "artifacts": {
+    "portfolio_state": {
+      "balance": 1030.8327399228028,
+      "holdings": {
+        "ETH": 0.17527377764067475,
+        "BTC": 0.0056921254567219165
+      }
+    },
+    "costs": {
+      "entry_fee_paid": 0.0,
+      "fee_paid": 0.0,
+      "fee_rate": 0.0
+    },
+    "gzip_path": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\outputs\\seq_R0_thesis_seed396379_B1.json.gz",
+    "gzip_name": "seq_R0_thesis_seed396379_B1.json.gz",
+    "sim_path": "C:\\Users\\rafal\\PycharmProjects\\crypto-turtle-rl\\shared\\simulation\\thesis_results\\R0_thesis_396379_20261027_A1_B10\\windows\\B1",
+    "wall_time_s": 4.2,
+    "wall_time_s_total": 4.2,
+    "optuna_time_s": 0.0,
+    "train_time_s": 0.0,
+    "ul_fit_time_s": 0.0,
+    "adaptation_cost": 0,
+    "num_envs": 11,
+    "hardware": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+      "cpu_count": 16,
+      "cuda_available": false,
+      "device": "cpu"
+    },
+    "wall_time_parts_sum": 0.0
+  },
+  "status": "ok",
+  "extras": {
+    "portfolio_mode": "equal_weight_close",
+    "hodl_warmup_ticks": 130,
+    "n_window_ticks": 40320,
+    "hodl_entry_fee": false,
+    "entry_fee_paid": 0.0
+  },
+  "timestamp": "2026-10-27T22:15:12.650873"
+}

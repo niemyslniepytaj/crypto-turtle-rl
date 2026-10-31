@@ -1,0 +1,47 @@
+======================================================================
+LSTM LOG-RETURN MODEL SUMMARY
+======================================================================
+
+Model ID:   LR1449
+Data ID:    E114
+Symbol:     ETH
+Horizon:    t+12
+Lookback:   48
+Features:   14
+Target scl: DISABLED
+Loss:       custom
+Best epoch: 39
+Timestamp:  20260927_013522
+
+ARCHITECTURE:
+  Hidden:      32
+  Layers:      1
+  Dropout:     0.35
+  Bidir:       False
+  Attention:   True
+  Params:      10,561
+
+TRAIN METRICS (log-return):
+  MAE:      0.002615
+  RMSE:     0.003946
+  R²:       -0.0500
+  Dir Acc:  49.63%
+
+  THRESHOLDED (|y| ≥ 0.001000, n=147454):
+  t_MAE:     0.003400
+  t_RMSE:    0.004712
+  t_R²:      -0.0328
+  t_Dir Acc: 49.49%
+
+VALIDATION METRICS (log-return):
+  MAE:      0.002215
+  RMSE:     0.003262
+  R²:       -0.0832
+  Dir Acc:  49.51%
+
+  THRESHOLDED (|y| ≥ 0.001000, n=135808):
+  t_MAE:     0.002990
+  t_RMSE:    0.004027
+  t_R²:      -0.0541
+  t_Dir Acc: 49.47%
+

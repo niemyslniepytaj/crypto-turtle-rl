@@ -1,0 +1,10 @@
+{
+  "arm": "M3",
+  "continue_on": "A1",
+  "continue_from": "PPO_best_UL_396379.zip",
+  "agent_file": "agent_ppo_rlul_seed396379_final_2026-10-27_01-55-17.zip",
+  "sim_mode": "rlul",
+  "result": "success",
+  "seed": 396379,
+  "regime_labels": true
+}

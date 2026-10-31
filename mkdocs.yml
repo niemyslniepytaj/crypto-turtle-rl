@@ -1,0 +1,48 @@
+﻿site_name: crypto-turtle-rl
+site_description: Dokumentacja projektu — opis oraz API z docstringów
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: pl
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - search.suggest
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            members_order: source
+            filters:
+              - "!^_"
+
+nav:
+  - Start: index.md
+  - Opis projektu: opis-projektu.md
+  - Protokół badawczy: protokol-badawczy.md
+  - Wyniki kampanii: wyniki-kampanii-tezy.md
+  - Poza protokołem: poza-protokolem.md
+  - API:
+      - Przegląd: api/index.md
+      - rl_module: api/rl_module.md
+      - test_module: api/test_module.md
+      - thesis: api/thesis.md
+      - CLI plgrid: api/plgrid.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true

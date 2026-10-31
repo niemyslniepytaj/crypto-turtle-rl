@@ -1,0 +1,30 @@
+# Web Framework & Server
+fastapi==0.118.0
+uvicorn==0.37.0
+python-dotenv==1.1.1
+
+# Data Science & ML Core
+numpy==2.3.3
+pandas==2.3.3
+scikit-learn==1.7.2
+scipy==1.16.2
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.8.0
+joblib==1.5.2
+
+# Reinforcement Learning
+stable-baselines3==2.7.0
+gymnasium==1.2.1
+optuna
+
+# Visualization
+matplotlib==3.10.6
+dash
+plotly
+
+# Financial Metrics
+empyrical-reloaded==0.5.12
+
+# Exchange / Infrastructure
+python-binance
+tqdm

@@ -1,0 +1,51 @@
+{
+  "schema": "turtle.sequence_config.v1",
+  "run_label": "test",
+  "portfolio_mode": "reset",
+  "experiment_version": "v6",
+  "arms": ["R0", "R1", "R2", "M1", "M2"],
+  "start_window": "A1",
+  "end_window": "B10",
+  "seeds": [396379, 951830, 246215],
+  "balance_start": 1000.0,
+  "plots": true,
+  "logs": false,
+  "sim_results": true,
+  "quiet": true,
+  "resume": true,
+  "optuna_n_trials": 75,
+  "optuna_rolling_windows": 3,
+  "continue_timesteps": 200000,
+  "learning_rate": 0.0001,
+  "num_envs": 4,
+  "skip_placeholders": true,
+  "data_files": {
+    "ETH": "ETHUSDT_1m_20250511_20260831.csv",
+    "BTC": "BTCUSDT_1m_20250511_20260831.csv"
+  },
+  "model_paths": {
+    "ETH": "LR1449_eth_model_E114_2709",
+    "BTC": "LR1414_btc_model_B104_2209"
+  },
+  "by_seed": {
+    "396379": {
+      "best_params_path": "shared/agents/optuna_studies/r1_lock_final_seed396379_sl003.json",
+      "agent_rl": "agent_ppo_seed396379_....zip"
+    },
+    "951830": {
+      "best_params_path": "shared/agents/optuna_studies/r1_lock_final_seed951830_sl003.json",
+      "agent_rl": "agent_ppo_seed951830_....zip"
+    },
+    "246215": {
+      "best_params_path": "shared/agents/optuna_studies/r1_lock_final_seed246215_sl003.json",
+      "agent_rl": "agent_ppo_seed246215_....zip"
+    }
+  },
+  "_comments": {
+    "run_label": "Fragment nazwy: {ARM}_{run_label}_{seed}_{date}_{start}_{end}",
+    "portfolio_mode": "reset | continuous — osobne runy, nie mieszaj w compare",
+    "smoke": "Na smoke ustaw end_window=A2 lub B1; pełny OOS: B10",
+    "entries": "Osobno: plgrid_simulation_tuner → plgrid_ppo_tuner → plgrid_train_agent_ppo → plgrid_test_sequence → plgrid_thesis_compare",
+    "ppo_hparams": "shared/agents/optuna_studies/ppo_hparams_lock.json (1× warsztat)"
+  }
+}

@@ -1,0 +1,5 @@
+hypothesis,kind,arm_x,arm_y,delta_name,portfolio_mode,status,n_all,n_zero,n_nonzero,W_plus,W_minus,statistic,p_value,r_rb,median_d,n_positive,zero_method,median_d_ci_lo,median_d_ci_hi,median_d_boot,decision_raw,holm_family,p_holm,p_holm_sensitivity_only,kendall_w
+H1,wilcoxon_pair,M1,R1,Delta_MP,reset,ok,10.0,0.0,10.0,13.0,42.0,13.0,0.16015625,-0.5272727272727272,-1.5299999999999998,3.0,wilcox,-4.4,0.6333333333333333,-1.5299999999999998,fail_to_reject,,0.392578125,True,
+H2,wilcoxon_pair,M2,R2,Delta_RL,reset,ok,10.0,0.0,10.0,12.0,43.0,12.0,0.130859375,-0.5636363636363636,-0.311666666666667,3.0,wilcox,-0.8366666666666667,0.09666666666666712,-0.311666666666667,fail_to_reject,,0.392578125,True,
+H3,wilcoxon_pair,M3,R3,Delta_UL,reset,ok,10.0,0.0,10.0,20.0,35.0,20.0,0.4921875,-0.2727272727272727,-0.18333333333333326,5.0,wilcox,-1.2099999999999973,0.47999999999999976,-0.18333333333333326,fail_to_reject,,0.4921875,True,
+H4,friedman_deltas,,,,,ok,,,,,,1.4000000000000057,0.496585303791408,,,,,,,,fail_to_reject,,,,0.07
