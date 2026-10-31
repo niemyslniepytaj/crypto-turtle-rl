@@ -24,6 +24,25 @@
 
 ---
 
+## Praca magisterska
+
+Repozytorium powstało jako **implementacja i infrastruktura badawcza** pod pracę magisterską — nie jako produkt handlowy „z pudełka”. Kod, protokół eksperymentalny (R0–M3), walk-forward, locki konfiguracji i warstwa statystyczna służą do **reprodukowalnej oceny** metod samodoskonalenia bota.
+
+| | |
+|---|---|
+| **Temat** | *Analiza oraz ocena skuteczności i efektywności metod samodoskonalenia w przypadku autonomicznego bota tradingowego* |
+| **Pytanie badawcze** | Czy i które metody samodoskonalenia (strojenie parametrów, RL, RL + uczenie nienadzorowane / reżimy) poprawiają wyniki względem wariantów zamrożonych i względem Buy & Hold — na tych samych danych i oknach OOS? |
+| **Obiekt badań** | Autonomiczny bot spot (ETH+BTC, Binance, świece 1m) ze wspólnym silnikiem decyzji i backtestu |
+| **Metody w matrycy** | MP + Optuna · RL (PPO) · RL + UL (etykieta reżimu) — warianty **frozen** (R1–R3) vs **adaptive** (M1–M3), baseline **R0** |
+| **Protokół** | Walk-forward, stałe seedy, zamrożone locki, porównania między-ramienne i testy hipotez (H1–H5) |
+| **Artefakty pod pracę** | Runy `shared/simulation/thesis_results/`, raporty compare/report, eksport `.tex` / wykresy z pakietu `thesis/` |
+
+Szczegóły procedury i wyników: [protokół badawczy](docs/protokol-badawczy.md) · [wyniki kampanii](docs/wyniki-kampanii-tezy.md).
+
+Hipotezy robocze (skrót): **H1** — cykliczne strojenie MP (M1) vs lock (R1); **H2** — continue-learn PPO (M2) vs agent zamrożony (R2); **H3** — RL+UL adaptive (M3) vs RL+UL frozen (R3); dalej porównania między metodami oraz względem R0 — pełna definicja w `rl_module/services/thesis/hypotheses.py` i generatorze raportu.
+
+---
+
 ## Dokumentacja
 
 > **Pełny opis systemu, protokół eksperymentalny, wyniki i reference API**  
